@@ -81,6 +81,7 @@ h1 {
   margin: 0 auto;
   min-width: 250px;
   max-width: min(500px, 58vh, 100%);
+  position: relative;
 }
 
 .guess-results {
@@ -229,4 +230,39 @@ h1 {
   to {
     transform: translateY(0%);
   }
+}
+
+/* warning modal */
+
+.warning-modal {
+  width: 450px;
+  background-color: #ffffff;
+  height: fit-content;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 16px;
+  border-radius: 8px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.warning-modal .warning {
+  display: block;
+}
+
+.warning-modal .close-btn {
+  background-color: antiquewhite;
+  padding: 4px 20px;
+  display: block;
+  margin: auto;
+  margin-top: 16px;
+  border-radius: 8px;
+  background-color: #404040;
+  color: #ffffff;
+  transition: 200ms;
+}
+
+.warning-modal .close-btn:hover {
+  background-color: #585656;
 }
